@@ -53,25 +53,7 @@ export default function Navbar() {
 
           {/* Shop Now Button & Mobile Menu */}
           <div className="flex items-center gap-3">
-            <Button
-              variant="outline"
-              size="icon"
-              className="relative rounded-full h-8 w-8"
-              onClick={() => setTheme(isDark ? "light" : "dark")}
-            >
-              <SunIcon
-                className={cn(
-                  "absolute h-5 w-5 transition",
-                  isDark ? "scale-100" : "scale-0"
-                )}
-              />
-              <MoonIcon
-                className={cn(
-                  "absolute h-5 w-5 transition",
-                  isDark ? "scale-0" : "scale-100"
-                )}
-              />
-            </Button>
+         
             <Link href="/shop" className="hidden sm:block">
               <Button className="bg-gradient-to-r from-[#9D4EDD] to-[#C77DFF] hover:from-[#C77DFF] hover:to-[#9D4EDD] text-white font-semibold shadow-lg shadow-purple-200">
                 Shop Now
@@ -85,7 +67,7 @@ export default function Navbar() {
                   <Menu className="h-6 w-6" />
                 </Button>
               </SheetTrigger>
-              <SheetContent side="right" className="w-80">
+              <SheetContent side="right" className="pl-10 w-80">
                 <div className="flex flex-col gap-6 mt-8">
                   {navLinks.map((link) => (
                     <Link

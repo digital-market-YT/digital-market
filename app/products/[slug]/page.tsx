@@ -1,7 +1,29 @@
 import React from 'react';
 import { Check, X, Zap, ArrowRight } from 'lucide-react';
 
-const ReelsLandingPage = () => {
+const ReelsLandingPage = async ({params}:{params:Promise<{slug:string}>}) => {
+  const {slug} = await params;
+
+  console.log(`slug: ${slug}`);
+  
+
+  
+  
+  
+
+
+
+  if (!slug) {
+    return (
+      <div className="min-h-screen bg-zinc-950 text-white flex items-center justify-center">
+        <div className="text-center">
+          <h1 className="text-3xl font-bold mb-4">Product Not Found</h1>
+          <p className="text-gray-400">The product you are looking for does not exist.</p>
+        </div>
+      </div>
+    );
+  }
+  
   return (
     <div className="min-h-screen bg-zinc-950 text-white">
       {/* Hero Section */}
@@ -107,7 +129,7 @@ const ReelsLandingPage = () => {
               Ready to Transform Your Content?
             </h2>
             <p className="text-yellow-500 text-xl mb-8">
-              Join 17,000+ creators who&apos;ve already upgraded their content game.
+              Join 17,000+ creators who have already upgraded their content game.
             </p>
             
             <button className="bg-gradient-to-r from-yellow-400 to-yellow-500 text-black text-xl font-bold px-12 py-5 rounded-full hover:scale-105 transition-transform mb-6">
@@ -371,3 +393,7 @@ const ReelsLandingPage = () => {
 };
 
 export default ReelsLandingPage;
+
+function usepathname() {
+  throw new Error('Function not implemented.');
+}

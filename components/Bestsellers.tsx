@@ -1,43 +1,59 @@
 import React from 'react';
 
+interface Product{
+  id: number;
+  image: string;
+  gradient: string;
+  title: string;
+  description: string;
+  price: string;
+  
+}
 const BestSellers = () => {
-  const products = [
+  const products:Product[] = [
     {
       id: 1,
-      image:"/3d-facts-reels.png",
+      image:"https://res.cloudinary.com/dkwabt89v/image/upload/v1770126013/IMG_20260201_081118_hkniu0.jpg",
+   
       gradient: 'from-indigo-300 via-indigo-500 to-indigo-400',
-      title: '1500+ Motion Graphics Reels Bundle Create Viral Content in Minutes – No Editing Needed',
+      title: '100k 3D Facts Reels Bundle Create Viral Content in Minutes – No Editing Needed',
+     
       description: 'Transform your content with professional animations',
-      price: 'Rs. 99.00',
-      badge: null
+      price: 'Rs. 199.00',
+      
     },
     {
       id: 2,
-      image: "/animatedgymreels.png",
+      image: "https://res.cloudinary.com/dkwabt89v/image/upload/v1770126028/IMG_20260201_081732_kxw3hz.png",
+   
       gradient: 'from-black-400 via-black-500 to-black-600',
-      title: 'UltraVault 30M: The Ultimate Digital Empire Bundle',
+      title: '10k Animated Gym Reels Bundle – No Editing Needed',
       description: 'Instant downloads, unlimited usage rights',
-      price: 'Rs. 99.00',
-      badge: 'ALL IN ONE BUNDLE'
+      price: 'Rs. 149.00',
+      
     },
     
     {
       id: 3,
-      image: "/motiongraphicreels.png",
-      gradient: 'from-gray-600 via-gray-500 to-gray-400',
-      title: 'UltraVault 30M: The Ultimate Digital Empire Bundle',
+      image: "https://res.cloudinary.com/dkwabt89v/image/upload/v1770126050/1769912985519_jjloit.png",
+        
+      gradient: 'from-orange-900 via-orange-700 to-orange-500',
+      title: '1500+ Motion Graphics Reels Bundle (No copyright issues | Instant Download)',
+    
       description: 'Instant downloads, unlimited usage rights',
-      price: 'Rs. 99.00',
-      badge: 'ALL IN ONE BUNDLE'
+      price: 'Rs. 149.00',
+      
     },
     {
       id: 4,
-      image: "/videoeditingbundle.png",      
-      gradient: 'from-orange-900 via-orange-700 to-orange-500',
-      title: 'All-In-One Video Editing Master Pack – 1250GB of Premium Assets ₹99',
+      image: "https://res.cloudinary.com/dkwabt89v/image/upload/v1770125927/IMG_20260201_082612_mjqo5w.png",
+         
+      gradient: 'from-gray-900 via-#12121A to-#12121A',
+      title:"Mega All In One Reels Bundle Pack (No copyright issues | Instant Download)",
+    
       description: 'Premium quality assets for serious creators',
-      price: 'Rs. 99.00',
-      badge: 'All-In-One Video Editing Master Pack - 1250GB'
+      price: 'Rs. 149.00',
+      
     }
   ];
 
@@ -63,11 +79,7 @@ const BestSellers = () => {
             >
               {/* Product Image with Gradient */}
               <div className={`relative h-64 bg-gradient-to-br ${product.gradient} p-4 flex items-center justify-center`}>
-                {product.badge && (
-                  <div className="absolute top-4 right-4 bg-pink-600 text-white text-xs font-bold px-3 py-1 rounded-full">
-                    {product.badge}
-                  </div>
-                )}
+               
                 <div className="w-full h-full bg-black/20 rounded-xl backdrop-blur-sm flex items-center justify-center">
                   <img 
                     src={product.image} 

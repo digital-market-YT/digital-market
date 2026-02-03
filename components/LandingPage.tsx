@@ -389,25 +389,26 @@ import { ArrowRight, Download, CreditCard, Package, Sparkles, FileText, Image, B
 import { motion } from 'framer-motion';
 
 export default function HeroSection() {
-  const productImages = [
-    'https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/696d1056e099202056c964ae/c57829ef2_videoeditingbundle.png',
-    'https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/696d1056e099202056c964ae/d3eca3c7f_aianimalsreels.png',
-    'https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/696d1056e099202056c964ae/ceaf951bc_hulkvideos.png',
-    'https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/696d1056e099202056c964ae/b6a2787d2_Hdvideoclips.png',
-    'https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/696d1056e099202056c964ae/eaf4555d0_megabundlereels.png',
-    'https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/696d1056e099202056c964ae/4909f1b34_carsurvivalreels.png',
-    'https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/696d1056e099202056c964ae/c52ff97f6_aidancingreels.png',
-    'https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/696d1056e099202056c964ae/b74799a69_resinflooringreels.png',
-    'https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/696d1056e099202056c964ae/43c9a9af8_motiongraphicreels.png',
-    'https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/696d1056e099202056c964ae/c9e5ab60e_madscientistreels.png',
-    'https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/696d1056e099202056c964ae/4605beab3_glasscuttingreels.png',
-    'https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/696d1056e099202056c964ae/f7d76420b_animatedgymreels.png',
-    'https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/696d1056e099202056c964ae/34977d83c_animereels.png',
-    'https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/696d1056e099202056c964ae/fb208ef3f_Aistoryreels.png',
-    'https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/696d1056e099202056c964ae/77eb80917_babypodcastreels.png',
-    'https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/696d1056e099202056c964ae/3bc869911_3d-facts-reels.png',
-    'https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/696d1056e099202056c964ae/1b1817665_babyfruitsreels.png',
-  ];
+   const productImages: string[] = [
+  "https://res.cloudinary.com/dkwabt89v/image/upload/v1770126042/IMG_20260201_081511_wziqfe.png",
+  "https://res.cloudinary.com/dkwabt89v/image/upload/v1770126013/IMG_20260201_081118_hkniu0.jpg",
+  "https://res.cloudinary.com/dkwabt89v/image/upload/v1770125999/IMG_20260201_081153_xllbzo.jpg",
+  "https://res.cloudinary.com/dkwabt89v/image/upload/v1770125994/IMG_20260201_081451_kdz9zf.jpg",
+  "https://res.cloudinary.com/dkwabt89v/image/upload/v1770125972/IMG_20260201_081543_ijdvju.jpg",
+  "https://res.cloudinary.com/dkwabt89v/image/upload/v1770125958/IMG_20260201_081709_dc1cr5.jpg",
+  "https://res.cloudinary.com/dkwabt89v/image/upload/v1770126028/IMG_20260201_081732_kxw3hz.png",
+  "https://res.cloudinary.com/dkwabt89v/image/upload/v1770125993/IMG_20260201_081920_xq8v8d.png",
+  "https://res.cloudinary.com/dkwabt89v/image/upload/v1770125943/IMG_20260201_082008_gwbpyx.png",
+  "https://res.cloudinary.com/dkwabt89v/image/upload/v1770125931/IMG_20260201_082043_dbxu5y.png",
+  "https://res.cloudinary.com/dkwabt89v/image/upload/v1770126049/1769913020272_uyowt9.png",
+  "https://res.cloudinary.com/dkwabt89v/image/upload/v1770125992/IMG_20260201_082405_ptq3l7.png",
+  "https://res.cloudinary.com/dkwabt89v/image/upload/v1770126044/1769913023999_ytmgoj.png",
+  "https://res.cloudinary.com/dkwabt89v/image/upload/v1770125953/IMG_20260201_082440_pjeexd.png",
+  "https://res.cloudinary.com/dkwabt89v/image/upload/v1770125991/IMG_20260201_082525_jk1jsz.png",
+  "https://res.cloudinary.com/dkwabt89v/image/upload/v1770126050/1769912985519_jjloit.png",
+  "https://res.cloudinary.com/dkwabt89v/image/upload/v1770125947/IMG_20260201_082650_vfkfvp.png",
+  "https://res.cloudinary.com/dkwabt89v/image/upload/v1770125927/IMG_20260201_082612_mjqo5w.png"
+];
 
   return (
     <section className="relative overflow-hidden bg-gradient-to-br from-white via-blue-50/50 to-green-50/50 min-h-screen pt-8 pb-24 md:pt-16 md:pb-32">
@@ -419,7 +420,7 @@ export default function HeroSection() {
             100% { transform: translateX(-50%); }
           }
           .animate-scroll {
-            animation: scroll 40s linear infinite;
+            animation: scroll 10s linear infinite;
           }
           .animate-scroll:hover {
             animation-play-state: paused;
