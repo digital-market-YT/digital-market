@@ -207,7 +207,7 @@ export default function ProductsPage() {
                 <div className="flex items-center flex-col gap-1 mb-3">
                   <div className="flex items-center gap-2">
                     <span className="text-xs md:text-sm line-through text-white">
-                      ₹{product.price.toLocaleString('en-IN')}
+                      ₹9999
                     </span>
 
                     
