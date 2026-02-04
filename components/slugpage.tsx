@@ -103,7 +103,7 @@ const SlugPage = ({ slug }: { slug: string }) => {
           {/* Description */}
           <p className="text-gray-400 text-lg max-w-3xl mx-auto mb-10">
             Skip hours of editing. Get 1000+ high-engagement {title}
-            , ready to post on Instagram, YouTube Shorts, and TikTok.
+            , ready to post on Instagram, YouTube Shorts.
             Just download, post, and grow.
           </p>
 
