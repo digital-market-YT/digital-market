@@ -6,12 +6,13 @@ import { useRef } from "react";
 
 import { Check, X, Zap, ArrowRight } from 'lucide-react';
 import VideoPreviewGallery from "./videos";
+import { useRouter } from "next/navigation";
 
 
 
 const SlugPage = ({ slug }: { slug: string }) => {
   
-   
+    const router=useRouter()
     const carouselRef = useRef<HTMLDivElement>(null);
 
   const scrollLeft = () => {
@@ -45,8 +46,7 @@ const SlugPage = ({ slug }: { slug: string }) => {
   const image = product?.image;
   const videoUrls = product?.videoUrls || [];
   const price = product?.price || 149
-  const testimonials = product?.testimonials;
-
+  const url = product?.url || '';
   
   
   
@@ -117,7 +117,7 @@ const SlugPage = ({ slug }: { slug: string }) => {
           </div>
 
           {/* CTA Button */}
-          <button className="bg-gradient-to-r from-yellow-400 to-yellow-500 text-black text-xl font-bold px-12 py-5 rounded-full hover:scale-105 transition-transform mb-4">
+          <button onClick={() => { router.push(url) }} className=" cursor-pointer bg-gradient-to-r from-yellow-400 to-yellow-500 text-black text-xl font-bold px-12 py-5 rounded-full hover:scale-105 transition-transform mb-4">
             Download Viral Reels Bundle
           </button>
           
@@ -190,7 +190,7 @@ const SlugPage = ({ slug }: { slug: string }) => {
               Join 17,000+ creators who have already upgraded their content game.
             </p>
             
-            <button className="bg-gradient-to-r from-yellow-400 to-yellow-500 text-black text-xl font-bold px-12 py-5 rounded-full hover:scale-105 transition-transform mb-6">
+            <button onClick={() => { router.push(url) }} className="bg-gradient-to-r from-yellow-400 to-yellow-500 text-black text-xl font-bold px-12 py-5 rounded-full hover:scale-105 transition-transform mb-6">
               Get 1000+ viral Reels Bundle
             </button>
 
@@ -311,8 +311,8 @@ const SlugPage = ({ slug }: { slug: string }) => {
               Join thousands of creators growing faster with ready-made viral reels.
             </p>
             
-            <button className="bg-gradient-to-r from-yellow-400 to-yellow-500 text-black text-xl font-bold px-12 py-5 rounded-full hover:scale-105 transition-transform">
-              Get Instant Access to 100+ Reels Now
+            <button onClick={() => { router.push(url) }} className="bg-gradient-to-r from-yellow-400 to-yellow-500 text-black text-xl font-bold px-12 py-5 rounded-full hover:scale-105 transition-transform">
+              Get Instant Access to 1000+ Reels Now
             </button>
           </div>
         </div>
@@ -372,7 +372,7 @@ const SlugPage = ({ slug }: { slug: string }) => {
               It takes less than 2 minutes to unlock unlimited content.
             </p>
 
-            <button className="bg-gradient-to-r from-red-600 to-red-500 hover:from-red-700 hover:to-red-600 text-white text-xl font-bold px-12 py-5 rounded-full transition-all mb-8">
+            <button onClick={() => { router.push(url) }} className="bg-gradient-to-r from-red-600 to-red-500 hover:from-red-700 hover:to-red-600 text-white text-xl font-bold px-12 py-5 rounded-full transition-all mb-8">
               Get 10000+ Ready-to-Post Reels
             </button>
 
@@ -417,7 +417,7 @@ const SlugPage = ({ slug }: { slug: string }) => {
             Get <span className="text-white font-bold">instant access</span> to <span className="text-white font-bold">100+ ready-to-post reels</span>.No editing. No copyright issues. Just upload & grow.
           </p>
 
-          <button className="bg-gradient-to-r from-yellow-400 to-yellow-500 text-black text-xl font-bold px-12 py-5 rounded-full hover:scale-105 transition-transform mb-8">
+          <button onClick={() => { router.push(url) }} className="bg-gradient-to-r from-yellow-400 to-yellow-500 text-black text-xl font-bold px-12 py-5 rounded-full hover:scale-105 transition-transform mb-8">
             Get 1000+ {title} Bundle
           </button>
 
