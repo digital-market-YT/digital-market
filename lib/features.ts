@@ -16,16 +16,17 @@ export const products: Product[] = [
     name: "Ai Baby Fruit Eating reels Bundle",
     image: "https://res.cloudinary.com/dkwabt89v/image/upload/v1770126042/IMG_20260201_081511_wziqfe.png",
     videoUrls: [
-      "https://example.com/videos/product1/video1.mp4",
-      "https://example.com/videos/product1/video2.mp4",
-      "https://example.com/videos/product1/video3.mp4",
-      "https://example.com/videos/product1/video4.mp4",
-      "https://example.com/videos/product1/video5.mp4",
-      "https://example.com/videos/product1/video6.mp4",
-      "https://example.com/videos/product1/video7.mp4",
-      "https://example.com/videos/product1/video8.mp4",
-      "https://example.com/videos/product1/video9.mp4",
-      "https://example.com/videos/product1/video10.mp4"
+      "https://res.cloudinary.com/dkwabt89v/video/upload/v1770520107/7a4e07a7d333447fb9ecabc22bb119a7.HD-1080p-2.5Mbps-66748049_qoxjct.mp4",
+     "https://trendybundles.shop/cdn/shop/videos/c/vp/35ec4f75755a4341ad7db506726e81ea/35ec4f75755a4341ad7db506726e81ea.HD-1080p-2.5Mbps-66748063.mp4",
+      "https://trendybundles.shop/cdn/shop/videos/c/vp/4e09617113644ba1960afbea929075f2/4e09617113644ba1960afbea929075f2.HD-1080p-2.5Mbps-66748065.mp4",
+      "https://trendybundles.shop/cdn/shop/videos/c/vp/b55e6e86e4f44e1c9a7f6dfab51ef921/b55e6e86e4f44e1c9a7f6dfab51ef921.HD-1080p-2.5Mbps-66748064.mp4",
+      "https://trendybundles.shop/cdn/shop/videos/c/vp/67a2b623e65f4b5281a4e5de46973409/67a2b623e65f4b5281a4e5de46973409.HD-1080p-2.5Mbps-66748475.mp4",
+      "https://trendybundles.shop/cdn/shop/videos/c/vp/3118d02bc318428386e8d290a36ecd11/3118d02bc318428386e8d290a36ecd11.HD-720p-1.6Mbps-66748482.mp4",
+      "https://trendybundles.shop/cdn/shop/videos/c/vp/d2e8cecdd0874944a8af08faf1b2e376/d2e8cecdd0874944a8af08faf1b2e376.HD-720p-1.6Mbps-66748478.mp4",
+      "https://trendybundles.shop/cdn/shop/videos/c/vp/8789cef9a425497abd70c477cf18caea/8789cef9a425497abd70c477cf18caea.HD-1080p-2.5Mbps-66748485.mp4",
+      "https://trendybundles.shop/cdn/shop/videos/c/vp/9e3ce69f0ef848d5980305be02ebf652/9e3ce69f0ef848d5980305be02ebf652.HD-1080p-2.5Mbps-66748476.mp4",
+      "https://trendybundles.shop/cdn/shop/videos/c/vp/ccf9fc5990d942019ff0db97fd624b22/ccf9fc5990d942019ff0db97fd624b22.HD-1080p-2.5Mbps-66748479.mp4",
+      
     ],
     price: 149,
     testimonials: [

@@ -6,6 +6,8 @@
 
 import SlugPage from "@/components/slugpage";
 
+// import SlugPage from "@/components/slugpage";
+
 // const ReelsLandingPage = async ({params}:{params:Promise<{slug:string}>}) => 
   
  
@@ -487,14 +489,22 @@ import SlugPage from "@/components/slugpage";
 // export default ReelsLandingPage;
 
 
-
+interface PageProps {
+  params: Promise<{ slug: string }>;
+}
 
 
 const Page = async ({params}:{params:Promise<{slug:string}>}) => {
   const {slug} = await params;
   console.log(slug);
   return (
-    <div><SlugPage slug={slug} key={slug}/></div>
+    <div>
+      {/* <SlugPage slug={slug} key={slug}/> */}
+      <SlugPage slug={slug} key={slug}/>
+      
+
+    
+    </div>
   )
 }
 
