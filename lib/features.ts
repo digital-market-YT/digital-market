@@ -44,7 +44,7 @@ export const products: Product[] = [
     image: "https://res.cloudinary.com/dkwabt89v/image/upload/v1770126013/IMG_20260201_081118_hkniu0.jpg",
     videoUrls: [
       "https://res.cloudinary.com/dkwabt89v/video/upload/v1770556281/Untitled_design_mlrxux.mp4",
-      "https://res.cloudinary.com/dkwabt89v/video/upload/v1770556281/Untitled_design_mlrxux.mp4",
+       "https://res.cloudinary.com/dkwabt89v/video/upload/v1770558014/Untitled_design_1_ccihb1.mp4",
       "https://res.cloudinary.com/dkwabt89v/video/upload/v1770556281/Untitled_design_mlrxux.mp4",
       "https://res.cloudinary.com/dkwabt89v/video/upload/v1770556281/Untitled_design_mlrxux.mp4",
       "https://res.cloudinary.com/dkwabt89v/video/upload/v1770556281/Untitled_design_mlrxux.mp4",
