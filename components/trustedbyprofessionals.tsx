@@ -1,154 +1,123 @@
 "use client"
 import React from 'react';
 
-interface Testimonial {
+
+
+export interface FakeComment {
   id: number;
-  name: string;
-  comment: string;
-  village: string;
+  name: string;          // English/Telugu style name
+  comment: string;       // Full Telugu script
+  village: string;       // AP/Telangana village
+  imageUrl: string;      // Real image URL from search
 }
 
-
-
-export const testimonials: Testimonial[] = [
-  { id: 1, name: "Srinivas", comment: "బిగ్‌స్టాక్ ధన్యవాదాలు, నీ AI బేబీ బై ఫ్రూట్స్ ఈటింగ్ ఫ్రూట్స్ వైరల్ రీల్స్ తీసుకొని నా యూట్యూబ్ షార్ట్స్ మానిటైజేషన్ చేసుకొని ఇప్పుడు నెలకి లక్షలు సంపాదిస్తున్నా, కేవలం 23 రోజుల్లోనే!", village: "విజయవాడ" },
-  { id: 2, name: "Lakshmi", comment: "నేను ఇంటి దగ్గర కాలి గా ఉండే దాన్ని, మా భర్త తెచ్చిన డబ్బులు సరిపోయేవి కాదు. కాబట్టి 100 పెట్టి బిగ్‌స్టాక్ నుండి AI 3D నాలెడ్జ్ ఫాక్ట్స్ రీల్ బండిల్ తీసుకొని ఈ రోజు నా ఇన్‌స్టాగ్రామ్ ప్రొఫైల్ ద్వారా నెలకి 50,000 రూపాయలు సంపాదిస్తున్నా", village: "గుంటూరు" },
-  { id: 3, name: "Ravi Teja", comment: "నేను BTech 1st ఇయర్ స్టూడెంట్, పార్ట్ టైం ఇన్‌కమ్ కోసం 100 పెట్టి బిగ్‌స్టాక్ నుండి మోటివేషనల్ మోషన్ గ్రాఫిక్స్ రీల్స్ ప్యాక్ తీసుకున్నా. ఈ రోజు ఫేస్‌బుక్ పేజీ ద్వారా నెలకి 90,000 సంపాదిస్తున్నా", village: "రాజమండ్రి" },
-  { id: 4, name: "Anjali", comment: "బిగ్‌స్టాక్ సూపర్! నీ 1000+ AI స్టోరీ రీల్స్ బండిల్ తీసుకొని నా టిక్‌టాక్ అకౌంట్ వైరల్ చేసి 30 రోజుల్లోనే నెలకి 1 లక్ష ఆర్జన చేస్తున్నా", village: "కాకినాడ" },
-  { id: 5, name: "Mahesh Babu", comment: "అరేరే! బిగ్‌స్టాక్ లో ఈ యానిమే ఎడిట్ రీల్స్ బండిల్ 100కే తీసుకుని నా ఇన్‌స్టా రీల్స్ పోస్ట్ చేసి 15 రోజుల్లో 1.5 లక్షలు సంపాదించాను, అదిరింది!", village: "తిరుపతి" },
-  { id: 6, name: "Sravani", comment: "నేను గృహిణి, టైం పాస్ కోసం బిగ్‌స్టాక్ నుండి జిమ్ యానిమేటెడ్ రీల్స్ బండిల్ తీసుకున్నా. ఇప్పుడు యూట్యూబ్ షార్ట్స్ ద్వారా నెలకి 70,000 రూపాయలు వస్తున్నాయి", village: "నెల్లూరు" },
-  { id: 7, name: "Venkatesh", comment: "బిగ్‌స్టాక్ థాంక్స్ బ్రో! నీ AI గ్లాస్ కట్టింగ్ రీల్స్ బండిల్ వల్ల నా ఇన్‌స్టాగ్రామ్ పేజ్ 20 రోజుల్లో మానిటైజ్ అయ్యింది, నెలకి 1.2 లక్షలు ఆర్జన", village: "కర్నూలు" },
-  { id: 8, name: "Pooja", comment: "నేను ఇంట్లో ఉండే అమ్మాయిని, 100 రూపాయలు పెట్టి బిగ్‌స్టాక్ నుండి వైరల్ మ్యాడ్ సైంటిస్ట్ రీల్స్ తీసుకున్నా. ఇప్పుడు టిక్‌టాక్ ద్వారా నెలకి 80,000 సంపాదిస్తున్నా", village: "అనంతపురం" },
-  { id: 9, name: "Sai Kumar", comment: "బిగ్‌స్టాక్ అద్భుతం! 200+ రెసిన్ ఫ్లోరింగ్ టైమ్‌లాప్స్ రీల్స్ తీసుకొని నా యూట్యూబ్ చానల్ వైరల్ చేసి 45 రోజుల్లో నెలకి లక్షలు వస్తున్నాయి", village: "విశాఖపట్నం" },
-  { id: 10, name: "Divya", comment: "నేను బి.కామ్ చదివే సమయంలో 100 పెట్టి బిగ్‌స్టాక్ నుండి AI హల్క్ రీల్స్ తీసుకున్నా. ఈ రోజు ఫేస్‌బుక్ పేజీ ద్వారా నెలకి 1 లక్ష సంపాదిస్తున్నా", village: "కడప" },
-  // ... (continuing pattern with variation in bundles, earnings, time, villages)
-  { id: 11, name: "Harika", comment: "బిగ్‌స్టాక్ ధన్యవాదాలు, నీ AI యానిమల్ రీల్స్ ప్యాక్ తీసుకొని నా ఇన్‌స్టాగ్రామ్ గ్రో చేసి 25 రోజుల్లోనే నెలకి 60,000 ఆర్జన చేస్తున్నా", village: "శ్రీకాకుళం" },
-  { id: 12, name: "Chaitanya", comment: "నేను జాబ్ లేకుండా ఉన్న సమయంలో బిగ్‌స్టాక్ నుండి 200+ వైరల్ AI డాన్సింగ్ రీల్స్ తీసుకున్నా. ఇప్పుడు యూట్యూబ్ ద్వారా నెలకి 1.5 లక్షలు వస్తున్నాయి", village: "విజయనగరం" },
-  { id: 13, name: "Swapna", comment: "ఇంటి పనుల మధ్య 100 రూపాయలు పెట్టి బిగ్‌స్టాక్ నుండి 1000+ 3D నాలెడ్జ్ ఫాక్ట్స్ బండిల్ తీసుకున్నా. ఇప్పుడు టిక్‌టాక్ ద్వారా నెలకి 75,000 సంపాదిస్తున్నా", village: "ప్రకాశం" },
-  { id: 14, name: "Kiran", comment: "బిగ్‌స్టాక్ సూపర్ డీల్! నీ 200K+ వైరల్ మెగా రీల్స్ బండిల్ తీసుకొని నా ఫేస్‌బుక్ పేజ్ వైరల్ చేసి 18 రోజుల్లో 1 లక్ష ఆర్జన", village: "కృష్ణా" },
-  { id: 15, name: "Geetha", comment: "నేను గ్రామంలో ఉంటాను, ఇంటర్నెట్ స్లో అయినా బిగ్‌స్టాక్ నుండి 25,000+ HD వీడియో క్లిప్స్ తీసుకుని రీల్స్ చేసి నెలకి 90,000 సంపాదిస్తున్నా", village: "చిత్తూరు" },
-  // Pattern continues similarly up to id 1000 with different combinations of bundles like:
-  // AI Baby Podcast, Anime Edit, Gym Animated, Viral Mad Scientist, Resin Flooring, AI Dancing, Car Crash, AI Hulk, AI Animal, Motivational Motion Graphics, etc.
-  // Earnings: 30k to 3 lakhs, time: 10-60 days, villages: different AP & Telangana names like Tenali, Ongole, Nizamabad, Warangal, Khammam, Mahabubnagar, etc.
-  // To avoid making this response too long, imagine the array continues in the same style with unique variations for the remaining entries up to 1000.
-  // In real code you would generate or copy-paste variations to reach exactly 1000.
+export const testimonials: FakeComment[] = [
+  {
+    id: 1,
+    name: "Srinivas",
+    comment: "బిగ్‌స్టాక్ ధన్యవాదాలు! నీ AI బేబీ బై ఫ్రూట్స్ ఈటింగ్ ఫ్రూట్స్ వైరల్ రీల్స్ తీసుకొని నా యూట్యూబ్ షార్ట్స్ మానిటైజ్ చేసుకొని ఇప్పుడు నెలకి లక్షలు సంపాదిస్తున్నా... కేవలం 23 రోజుల్లోనే! 🔥💰",
+    village: "విజయవాడ",
+    imageUrl: "https://thumbs.dreamstime.com/z/happy-middle-aged-village-farmer-showing-indian-money-looking-camera-green-farmland-concept-successful-profit-farming-274779219.jpg"
+  },
+  {
+    id: 2,
+    name: "Lakshmi",
+    comment: "నేను ఇంటి దగ్గర కాలిగా ఉండే దాన్ని... మా భర్త తెచ్చిన డబ్బులు సరిపోయేవి కావు. 100 రూపాయలు పెట్టి బిగ్‌స్టాక్ నుండి AI 3D నాలెడ్జ్ ఫాక్ట్స్ బండిల్ తీసుకుని ఇన్‌స్టాగ్రామ్ ప్రమోషన్స్ ద్వారా ఈ రోజు నెలకి 50,000+ సంపాదిస్తున్నా. సూపర్ అనుభవం! 🙏✨",
+    village: "గుంటూరు",
+    imageUrl: "https://assets.isu.pub/document-structure/241102111025-b5c7560d8841620ccfa61b660dfda91c/v1/884cf1339b02f36fa75a693e9d44f0ed.jpeg"
+  },
+  {
+    id: 3,
+    name: "Ravi Teja",
+    comment: "BTech 1st ఇయర్ స్టూడెంట్ నేను... పార్ట్ టైం ఇన్‌కమ్ కోసం బిగ్‌స్టాక్ లో 100 పెట్టి మోటివేషనల్ మోషన్ గ్రాఫిక్స్ రీల్స్ ప్యాక్ తీసుకున్నా. ఇప్పుడు ఫేస్‌బుక్ పేజ్ ద్వారా నెలకి 90,000 సంపాదిస్తున్నా. థాంక్స్ బిగ్‌స్టాక్! 🚀💸",
+    village: "రాజమండ్రి",
+    imageUrl: "https://c8.alamy.com/comp/WATPG9/college-student-working-on-a-laptop-and-giving-thumb-up-WATPG9.jpg"
+  },
+  {
+    id: 4,
+    name: "Anjali",
+    comment: "బిగ్‌స్టాక్ అదిరిపోయింది! 1000+ AI స్టోరీ రీల్స్ బండిల్ తీసుకొని టిక్‌టాక్ అకౌంట్ వైరల్ చేసి 30 రోజుల్లోనే నెలకి 1 లక్ష ఆర్జన చేస్తున్నా. చాలా సంతోషం! ❤️📈",
+    village: "కాకినాడ",
+    imageUrl: "https://www.shutterstock.com/shutterstock/photos/2554785253/display_1500/stock-photo-happy-young-influencer-gesturing-heart-shape-and-vlogging-through-smart-phone-at-home-2554785253.jpg"
+  },
+  {
+    id: 5,
+    name: "Mahesh Babu",
+    comment: "అరేరే! బిగ్‌స్టాక్ లో యానిమే ఎడిట్ రీల్స్ బండిల్ 100కే తీసుకుని ఇన్‌స్టా రీల్స్ పోస్ట్ చేసి 15 రోజుల్లో 1.5 లక్షలు సంపాదించాను. ఇది నిజంగా గేమ్ చేంజర్! 🔥🎥",
+    village: "తిరుపతి",
+    imageUrl: "https://thumbs.dreamstime.com/b/success-freedom-carefree-runner-woman-running-fun-happiness-joy-energetic-athlete-girl-happy-weight-loss-goal-achievement-151881346.jpg"
+  },
+  {
+    id: 6,
+    name: "Sravani",
+    comment: "నేను గృహిణి, టైం పాస్ కోసం బిగ్‌స్టాక్ నుండి జిమ్ యానిమేటెడ్ రీల్స్ బండిల్ తీసుకున్నా. ఇప్పుడు యూట్యూబ్ షార్ట్స్ ద్వారా నెలకి 70,000 రూపాయలు వస్తున్నాయి. అద్భుతం! 💪📱",
+    village: "నెల్లూరు",
+    imageUrl: "https://thumbs.dreamstime.com/b/dancing-cartoon-girl-vibrant-disco-scene-colorful-lights-sparkling-dance-floor-concept-joyful-celebration-lively-425346912.jpg"
+  },
+  {
+    id: 7,
+    name: "Venkatesh",
+    comment: "బిగ్‌స్టాక్ థాంక్స్ బ్రో! నీ AI గ్లాస్ కట్టింగ్ రీల్స్ బండిల్ వల్ల నా ఇన్‌స్టాగ్రామ్ పేజ్ 20 రోజుల్లో మానిటైజ్ అయ్యింది, నెలకి 1.2 లక్షలు ఆర్జన. సూపర్! 🌟",
+    village: "కర్నూలు",
+    imageUrl: "https://4429452.fs1.hubspotusercontent-na1.net/hubfs/4429452/happy-asian-woman-with-headphones-working-on-lapto-2025-03-11-13-26-21-utc.jpg"
+  },
+  {
+    id: 8,
+    name: "Pooja",
+    comment: "నేను ఇంట్లో ఉండే అమ్మాయిని, 100 రూపాయలు పెట్టి బిగ్‌స్టాక్ నుండి వైరల్ మ్యాడ్ సైంటిస్ట్ రీల్స్ తీసుకున్నా. ఇప్పుడు టిక్‌టాక్ ద్వారా నెలకి 80,000 సంపాదిస్తున్నా. ధన్యవాదాలు! 🧪💸",
+    village: "అనంతపురం",
+    imageUrl: "https://i0.wp.com/vikalpsangam.org/wp-content/uploads/2022/03/farming-is-a-way-of-living-that-is-more-sustainable-kishore.jpg?resize=640%2C480&ssl=1"
+  },
+  {
+    id: 9,
+    name: "Sai Kumar",
+    comment: "బిగ్‌స్టాక్ అద్భుతం! 200+ రెసిన్ ఫ్లోరింగ్ టైమ్‌లాప్స్ రీల్స్ తీసుకొని నా యూట్యూబ్ చానల్ వైరల్ చేసి 45 రోజుల్లో నెలకి లక్షలు వస్తున్నాయి. రికమెండ్! 🏠🎬",
+    village: "విశాఖపట్నం",
+    imageUrl: "https://thumbs.dreamstime.com/b/back-view-indian-woman-orange-saree-adorned-flowers-walking-temple-vibrant-festival-surrounded-331073007.jpg"
+  },
+  {
+    id: 10,
+    name: "Divya",
+    comment: "నేను బి.కామ్ చదివే సమయంలో 100 పెట్టి బిగ్‌స్టాక్ నుండి AI హల్క్ రీల్స్ తీసుకున్నా. ఈ రోజు ఫేస్‌బుక్ పేజీ ద్వారా నెలకి 1 లక్ష సంపాదిస్తున్నా. సూపర్ డీల్! 🦸‍♂️📈",
+    village: "కడప",
+    imageUrl: "https://www.amraandelma.com/wp-content/uploads/2025/07/influencers_viral_challenges.jpg"
+  },
+  {
+    id: 11,
+    name: "Harika",
+    comment: "బిగ్‌స్టాక్ ధన్యవాదాలు, నీ AI యానిమల్ రీల్స్ ప్యాక్ తీసుకొని నా ఇన్‌స్టాగ్రామ్ గ్రో చేసి 25 రోజుల్లోనే నెలకి 60,000 ఆర్జన చేస్తున్నా. అమెజింగ్! 🐶✨",
+    village: "శ్రీకాకుళం",
+    imageUrl: "https://static.toiimg.com/thumb/msid-101193914,width-1070,height-580,imgsize-18422,resizemode-75,overlay-toi_sw,pt-32,y_pad-40/photo.jpg"
+  },
+  {
+    id: 12,
+    name: "Chaitanya",
+    comment: "నేను జాబ్ లేకుండా ఉన్న సమయంలో బిగ్‌స్టాక్ నుండి 200+ వైరల్ AI డాన్సింగ్ రీల్స్ తీసుకున్నా. ఇప్పుడు యూట్యూబ్ ద్వారా నెలకి 1.5 లక్షలు వస్తున్నాయి. థాంక్స్! 💃🎉",
+    village: "విజయనగరం",
+    imageUrl: "https://thumbs.dreamstime.com/z/happy-middle-aged-village-farmer-showing-indian-money-looking-camera-green-farmland-concept-successful-profit-farming-274779219.jpg"
+  },
+  {
+    id: 13,
+    name: "Swapna",
+    comment: "ఇంటి పనుల మధ్య 100 రూపాయలు పెట్టి బిగ్‌స్టాక్ నుండి 1000+ 3D నాలెడ్జ్ ఫాక్ట్స్ బండిల్ తీసుకున్నా. ఇప్పుడు టిక్‌టాక్ ద్వారా నెలకి 75,000 సంపాదిస్తున్నా. గ్రేట్! 📚💰",
+    village: "ప్రకాశం",
+    imageUrl: "https://c8.alamy.com/comp/WATPG9/college-student-working-on-a-laptop-and-giving-thumb-up-WATPG9.jpg"
+  },
+  {
+    id: 14,
+    name: "Kiran",
+    comment: "బిగ్‌స్టాక్ సూపర్ డీల్! నీ 200K+ వైరల్ మెగా రీల్స్ బండిల్ తీసుకొని నా ఫేస్‌బుక్ పేజ్ వైరల్ చేసి 18 రోజుల్లో 1 లక్ష ఆర్జన. అదిరింది! 🌟📱",
+    village: "కృష్ణా",
+    imageUrl: "https://www.shutterstock.com/shutterstock/photos/2554785253/display_1500/stock-photo-happy-young-influencer-gesturing-heart-shape-and-vlogging-through-smart-phone-at-home-2554785253.jpg"
+  },
+  {
+    id: 15,
+    name: "Geetha",
+    comment: "నేను గ్రామంలో ఉంటాను, ఇంటర్నెట్ స్లో అయినా బిగ్‌స్టాక్ నుండి 25,000+ HD వీడియో క్లిప్స్ తీసుకుని రీల్స్ చేసి నెలకి 90,000 సంపాదిస్తున్నా. ఇన్‌క్రెడిబుల్! 🏡🎥",
+    village: "చిత్తూరు",
+    imageUrl: "https://thumbs.dreamstime.com/b/success-freedom-carefree-runner-woman-running-fun-happiness-joy-energetic-athlete-girl-happy-weight-loss-goal-achievement-151881346.jpg"
+  }
 ];
-
-
-
-
-
-
-// const testimonials: Testimonial[] = [
-//   {
-//     id: 1,
-//     name: "Rajesh Kumar",
-//     role: "Wedding Cinematographer",
-//     location: "Mumbai, Maharashtra",
-//     image: "https://i.pravatar.cc/150?img=12",
-//     feedback: "స్టూడెంట్‌గా బిగ్‌స్టాక్ నుండి స్కిప్ హవర్స్ ఆఫ్ ఎడిటింగ్ బండిల్ తీసుకున్నా. ఫేస్‌బుక్‌తో 24 రోజుల్లో లక్షలు ఎర్న్ చేస్తున్నా.",
-//     rating: 5
-//   },
-//   {
-//     id: 2,
-//     name: "Priya Sharma",
-//     role: "Content Creator",
-//     location: "Bangalore, Karnataka",
-//     image: "https://i.pravatar.cc/150?img=47",
-//     feedback: "The reels bundle is absolutely fantastic! My engagement has increased by 300%. Worth every rupee!",
-//     rating: 5
-//   },
-//   {
-//     id: 3,
-//     name: "Amit Patel",
-//     role: "Video Editor",
-//     location: "Ahmedabad, Gujarat",
-//     image: "https://i.pravatar.cc/150?img=13",
-//     feedback: "Production-ready assets that actually work. No more spending hours creating effects from scratch. Highly recommended!",
-//     rating: 5
-//   },
-//   {
-//     id: 4,
-//     name: "Sneha Reddy",
-//     role: "Social Media Manager",
-//     location: "Hyderabad, Telangana",
-//     image: "https://i.pravatar.cc/150?img=38",
-//     feedback: "The quality is outstanding! Our client satisfaction has gone through the roof since we started using these templates.",
-//     rating: 5
-//   },
-//   {
-//     id: 5,
-//     name: "Vikram Singh",
-//     role: "Film Director",
-//     location: "Jaipur, Rajasthan",
-//     image: "https://i.pravatar.cc/150?img=14",
-//     feedback: "As a professional director, I need tools I can trust. These products deliver consistently excellent results.",
-//     rating: 5
-//   },
-//   {
-//     id: 6,
-//     name: "Ananya Desai",
-//     role: "Digital Marketing Agency",
-//     location: "Pune, Maharashtra",
-//     image: "https://i.pravatar.cc/150?img=45",
-//     feedback: "We've purchased multiple bundles for our team. The ROI has been incredible. Our clients love the polished look!",
-//     rating: 5
-//   },
-//   {
-//     id: 7,
-//     name: "Karthik Menon",
-//     role: "YouTube Creator",
-//     location: "Chennai, Tamil Nadu",
-//     image: "https://i.pravatar.cc/150?img=15",
-//     feedback: "My channel grew from 10k to 100k subscribers using these video templates. The quality speaks for itself!",
-//     rating: 5
-//   },
-//   {
-//     id: 8,
-//     name: "Neha Kapoor",
-//     role: "Freelance Editor",
-//     location: "Delhi, NCR",
-//     image: "https://i.pravatar.cc/150?img=44",
-//     feedback: "Best investment for my freelance business. Clients keep coming back because of the professional quality!",
-//     rating: 5
-//   },
-//   {
-//     id: 9,
-//     name: "Arjun Malhotra",
-//     role: "Brand Consultant",
-//     location: "Chandigarh, Punjab",
-//     image: "https://i.pravatar.cc/150?img=33",
-//     feedback: "These assets have become an essential part of our branding toolkit. Absolutely worth it!",
-//     rating: 5
-//   },
-//   {
-//     id: 10,
-//     name: "Divya Iyer",
-//     role: "Event Photographer",
-//     location: "Kochi, Kerala",
-//     image: "https://i.pravatar.cc/150?img=43",
-//     feedback: "The wedding bundle is a game-changer! My clients are blown away by the cinematic quality.",
-//     rating: 5
-//   },
-//   {
-//     id: 11,
-//     name: "Rohan Chatterjee",
-//     role: "Video Production House",
-//     location: "Kolkata, West Bengal",
-//     image: "https://i.pravatar.cc/150?img=68",
-//     feedback: "We've been using these for over a year. Consistent quality, regular updates, and amazing support!",
-//     rating: 5
-//   },
-//   {
-//     id: 12,
-//     name: "Kavya Nair",
-//     role: "Instagram Influencer",
-//     location: "Thiruvananthapuram, Kerala",
-//     image: "https://i.pravatar.cc/150?img=42",
-//     feedback: "My feed looks so much more professional now! These templates are a must-have for serious creators.",
-//     rating: 5
-//   }
-// ];
 
 export default function TestimonialsPage() {
 
@@ -226,7 +195,7 @@ export default function TestimonialsPage() {
                     {/* Profile */}
                     <div className="flex items-center gap-4">
                       <img 
-                        src={""} 
+                        src={testimonial.imageUrl} 
                         alt={testimonial.name}
                         className="w-12 h-12 rounded-full object-cover"
                       />
@@ -304,7 +273,7 @@ export default function TestimonialsPage() {
                     {/* Profile */}
                     <div className="flex items-center gap-4">
                       <img 
-                        src={""} 
+                        src={testimonial.imageUrl} 
                         alt={testimonial.name}
                         className="w-12 h-12 rounded-full object-cover"
                       />

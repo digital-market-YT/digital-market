@@ -7,6 +7,8 @@ import { useRef, useState } from "react";
 import { Check, X, Zap, ArrowRight } from 'lucide-react';
 import { useRouter } from "next/navigation";
 import React from "react";
+import TestimonialsSection2 from "./testinomials2";
+import DigitalProductsFooter from "./footer";
 
 // VideoPreviewGallery Component
 interface Video {
@@ -626,6 +628,9 @@ const SlugPage = ({ slug }: { slug: string }) => {
           </p>
         </div>
       </section>
+      <TestimonialsSection2/>
+      <DigitalProductsFooter/>
+      
     </div>
     </>
   )
