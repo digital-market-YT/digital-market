@@ -34,6 +34,7 @@ const products: Product[] = [
   },
   { id: 3,
     name: "Ai Baby Podcast Reels Bundle (No copyright issues | Instant Download)",
+    
     slug: "ai-baby-podcast-reels-bundle",
     image: "https://res.cloudinary.com/dkwabt89v/image/upload/v1770125999/IMG_20260201_081153_xllbzo.jpg",
 
@@ -73,15 +74,8 @@ const products: Product[] = [
     price: 149,
    
   },
+  
   { id: 8,
-    name: "Glass Cutting AI ASMR Reels Bundle (No copyright issues | Instant Download)",
-    slug: "glass-cutting-ai-asmr-reels-bundle",
-    image: "https://res.cloudinary.com/dkwabt89v/image/upload/v1770125993/IMG_20260201_081920_xq8v8d.png",
-    
-    price: 149,
-   
-  },
-  { id: 9,
     name: "Resin Flooring Timelapse Reels Bundle (No copyright issues | Instant Download)",
     slug: "resin-flooring-timelapse-reels-bundle",
     image: "https://res.cloudinary.com/dkwabt89v/image/upload/v1770125943/IMG_20260201_082008_gwbpyx.png",
@@ -89,7 +83,7 @@ const products: Product[] = [
     price: 149,
   
   },
-  { id: 10,
+  { id: 9,
     name: "Viral Ai Dancing Reels Bundle (No copyright issues | Instant Download)",
     slug: "viral-ai-dancing-reels-bundle",
     image: "https://res.cloudinary.com/dkwabt89v/image/upload/v1770125931/IMG_20260201_082043_dbxu5y.png",
@@ -97,7 +91,7 @@ const products: Product[] = [
     price: 149,
    
   },
-  { id: 11,
+  { id: 10,
     name: "4K Car Crash Reels Bundle (No copyright issues | Instant Download)",
     slug: "4k-car-crash-reels-bundle",
     image: "https://res.cloudinary.com/dkwabt89v/image/upload/v1770126049/1769913020272_uyowt9.png",
@@ -105,55 +99,8 @@ const products: Product[] = [
     price: 200,
    
   },
-  { id: 12,
-    name: "200k-ready-to-post-reels-bundle-52-viral-niches (No copyright issues | Instant Download)",
-    slug: "200k-ready-to-post-reels-bundle-52-viral-niches",
-    image: "https://res.cloudinary.com/dkwabt89v/image/upload/v1770125992/IMG_20260201_082405_ptq3l7.png",
-    
-    price: 149,
-   
-  },
-  { id: 13,
-    name: "Hd Video Clips Pack For Creators (No copyright issues | Instant Download)",
-    slug: "hd-video-clips-pack-for-creators",
-    image: "https://res.cloudinary.com/dkwabt89v/image/upload/v1770126044/1769913023999_ytmgoj.png",
-    
-    price: 149,
-    
-  },
-  { id: 14,
-    name: "Ai Animals Reels Bundle (No copyright issues | Instant Download)",
-    slug: "ai-animals-reels-bundle",
-    image: "https://res.cloudinary.com/dkwabt89v/image/upload/v1770125953/IMG_20260201_082440_pjeexd.png",
-   
-    price: 149,
-    
-  },
-  { id: 15,
-    name: "Telugu Ai Hulk-Videos (No copyright issues | Instant Download)",
-    slug: "telugu-ai-hulk-videos",
-    image: "https://res.cloudinary.com/dkwabt89v/image/upload/v1770125991/IMG_20260201_082525_jk1jsz.png",
-    
-    price: 149,
-   
-  },
-  { id: 16,
-    name: "1500-Motion Graphics Reels Bundle (No copyright issues | Instant Download)",
-    slug: "1500-motion-graphics-reels-bundle",
-    image: "https://res.cloudinary.com/dkwabt89v/image/upload/v1770126050/1769912985519_jjloit.png",
-   
-    price: 149,
-    
-  },
-  { id: 17,
-    name: "1500-Mad-Scientist Reels Bbundle (No copyright issues | Instant Download)",
-    slug: "1500-mad-scientist-reels-bbundle",
-    image: "https://res.cloudinary.com/dkwabt89v/image/upload/v1770125947/IMG_20260201_082650_vfkfvp.png",
-    
-    price: 149,
-    
-  },
-  { id: 18,
+  
+  { id: 11,
     name: "Mega All In One Reels Bundle Pack (No copyright issues | Instant Download)",
     slug: "mega-all-in-one-reels-bundle-pack",
     image: "https://res.cloudinary.com/dkwabt89v/image/upload/v1770125927/IMG_20260201_082612_mjqo5w.png",

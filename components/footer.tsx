@@ -124,13 +124,13 @@ export default function DigitalProductsFooter() {
               <li className="flex items-start gap-2">
                 <Phone className="w-5 h-5 text-[--secondary] flex-shrink-0 mt-0.5" />
                 <a href="https://wa.me/917793930405" className="text-sm hover:text-[--secondary] transition-colors">
-                  +91 7793930405
+                  +91 9876543210
                 </a>
               </li>
               <li className="flex items-start gap-2">
                 <MapPin className="w-5 h-5 text-[--accent] flex-shrink-0 mt-0.5" />
                 <span className="text-sm">
-                  Visakhapatnam, India
+                  Hyderabad, India
                 </span>
               </li>
             </ul>

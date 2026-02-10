@@ -35,10 +35,10 @@ const BestSellers = () => {
     
     {
       id: 3,
-      image: "https://res.cloudinary.com/dkwabt89v/image/upload/v1770126050/1769912985519_jjloit.png",
-        
+      image: "https://res.cloudinary.com/dkwabt89v/image/upload/v1770125999/IMG_20260201_081153_xllbzo.jpg",
+
       gradient: 'from-orange-900 via-orange-700 to-orange-500',
-      title: '1500+ Motion Graphics Reels Bundle (No copyright issues | Instant Download)',
+      title: "Ai Baby Podcast Reels Bundle (No copyright issues | Instant Download)",
     
       description: 'Instant downloads, unlimited usage rights',
       price: 'Rs. 149.00',
