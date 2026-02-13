@@ -21,7 +21,7 @@ const products: Product[] = [
     slug: "ai-baby-fruit-eating-reels-bundle",
     image: "https://res.cloudinary.com/dkwabt89v/image/upload/v1770126042/IMG_20260201_081511_wziqfe.png",
   
-    price: 149,
+    price: 99,
     
   },
   {  id:2,
@@ -38,7 +38,7 @@ const products: Product[] = [
     slug: "ai-baby-podcast-reels-bundle",
     image: "https://res.cloudinary.com/dkwabt89v/image/upload/v1770125999/IMG_20260201_081153_xllbzo.jpg",
 
-    price: 199,
+    price: 99,
    
   },
   {
@@ -47,7 +47,7 @@ const products: Product[] = [
     slug: "ai-story-reels-bundle",
     image:"https://res.cloudinary.com/dkwabt89v/image/upload/v1770125994/IMG_20260201_081451_kdz9zf.jpg",
     
-    price: 149,
+    price: 99,
   
   },
   { id: 5,
@@ -55,7 +55,7 @@ const products: Product[] = [
     slug: "ai-talking-objects-reels-bundle",
     image: "https://res.cloudinary.com/dkwabt89v/image/upload/v1770125972/IMG_20260201_081543_ijdvju.jpg",
    
-    price: 149,
+    price: 99,
   
   },
   { id: 6,
@@ -63,7 +63,7 @@ const products: Product[] = [
     slug: "anime-reels-edit-bundle",
     image: "https://res.cloudinary.com/dkwabt89v/image/upload/v1770125958/IMG_20260201_081709_dc1cr5.jpg",
    
-    price: 149,
+    price: 99,
    
   },
   { id: 7,
@@ -71,7 +71,7 @@ const products: Product[] = [
     slug: "3d-animated-gym-reels-bundle",
     image: "https://res.cloudinary.com/dkwabt89v/image/upload/v1770126028/IMG_20260201_081732_kxw3hz.png",
    
-    price: 149,
+    price: 99,
    
   },
   
@@ -80,7 +80,7 @@ const products: Product[] = [
     slug: "resin-flooring-timelapse-reels-bundle",
     image: "https://res.cloudinary.com/dkwabt89v/image/upload/v1770125943/IMG_20260201_082008_gwbpyx.png",
    
-    price: 149,
+    price: 99,
   
   },
   { id: 9,
@@ -88,7 +88,7 @@ const products: Product[] = [
     slug: "viral-ai-dancing-reels-bundle",
     image: "https://res.cloudinary.com/dkwabt89v/image/upload/v1770125931/IMG_20260201_082043_dbxu5y.png",
    
-    price: 149,
+    price: 99,
    
   },
   { id: 10,
@@ -96,7 +96,7 @@ const products: Product[] = [
     slug: "4k-car-crash-reels-bundle",
     image: "https://res.cloudinary.com/dkwabt89v/image/upload/v1770126049/1769913020272_uyowt9.png",
    
-    price: 200,
+    price: 99,
    
   },
   
@@ -105,7 +105,7 @@ const products: Product[] = [
     slug: "mega-all-in-one-reels-bundle-pack",
     image: "https://res.cloudinary.com/dkwabt89v/image/upload/v1770125927/IMG_20260201_082612_mjqo5w.png",
    
-    price: 149,
+    price: 99,
    
   }
 ];
