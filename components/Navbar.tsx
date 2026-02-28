@@ -2,22 +2,21 @@
 
 import React, { useState } from 'react';
 import Link from 'next/link';
-import { Menu, MoonIcon, Sparkles, SunIcon } from 'lucide-react';
+import { Menu, Sparkles,} from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
-import { cn } from '@/lib/utils';
 import { useTheme } from 'next-themes';
 
 export default function Navbar() {
   const { theme, setTheme } = useTheme();
   const [isOpen, setIsOpen] = useState(false);
-  const isDark = theme === "dark";
+ 
 
   const navLinks = [
     { name: 'Home', href: '/' },
-    { name: 'Shop Bundles', href: '/shop' },
-    { name: 'About Us', href: '/about' },
-    { name: 'Contact', href: '/contact' },
+    { name: 'Shop Bundles', href: '/' },
+    { name: 'About Us', href: '/' },
+    { name: 'Contact', href: '/' },
   ];
 
   return (
@@ -27,14 +26,14 @@ export default function Navbar() {
           {/* Logo */}
           <Link href="/" className="flex items-center gap-2">
             <div className="relative">
-              <div className="w-10 h-10 md:w-12 md:h-12 bg-gradient-to-br from-[#7B2CBF] to-[#9D4EDD] rounded-xl flex items-center justify-center">
+              <div className="w-10 h-10 md:w-12 md:h-12 dark:bg-gradient-to-br from-[#7B2CBF] to-[#9D4EDD] bg-gradient-to-br from-[#7B2CBF] to-[#9D4EDD] rounded-xl flex items-center justify-center">
                 <span className="text-white font-bold text-lg md:text-xl">₹</span>
               </div>
               <Sparkles className="absolute -top-1 -right-1 w-4 h-4 text-[#ff9500]" />
             </div>
             <div className="hidden sm:block">
-              <span className="font-bold text-xl md:text-2xl text-gray-900">Bundles</span>
-              <span className="font-bold text-xl md:text-2xl text-[#7B2CBF]">@100</span>
+              <span className="font-bold text-xl md:text-2xl dark:text-black text-gray-900">Bundles</span>
+              <span className="font-bold text-xl md:text-2xl dark:text-black text-[#7B2CBF]">@100</span>
             </div>
           </Link>
 
@@ -54,7 +53,7 @@ export default function Navbar() {
           {/* Shop Now Button & Mobile Menu */}
           <div className="flex items-center gap-3">
          
-            <Link href="/shop" className="hidden sm:block">
+            <Link href="/" className="hidden sm:block">
               <Button className="bg-gradient-to-r from-[#9D4EDD] to-[#C77DFF] hover:from-[#C77DFF] hover:to-[#9D4EDD] text-white font-semibold shadow-lg shadow-purple-200">
                 Shop Now
               </Button>
