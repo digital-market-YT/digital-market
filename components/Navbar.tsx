@@ -2,7 +2,7 @@
 
 import React, { useState } from 'react';
 import Link from 'next/link';
-import { Menu, Sparkles,} from 'lucide-react';
+import { Menu, MoonIcon, Sparkles, SunIcon,} from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
 import { useTheme } from 'next-themes';
@@ -23,22 +23,23 @@ export default function Navbar() {
     <nav className="sticky top-0 z-50 bg-white backdrop-blur-md border-b border-gray-100 shadow-sm">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16 md:h-20">
+                
           {/* Logo */}
           <Link href="/" className="flex items-center gap-2">
             <div className="relative">
-              <div className="w-10 h-10 md:w-12 md:h-12 dark:bg-gradient-to-br from-[#7B2CBF] to-[#9D4EDD] bg-gradient-to-br from-[#7B2CBF] to-[#9D4EDD] rounded-xl flex items-center justify-center">
+              <div className="w-10 h-10 md:w-12 md:h-12  bg-linear-to-br from-[#7B2CBF] to-[#9D4EDD] rounded-xl flex items-center justify-center">
                 <span className="text-white font-bold text-lg md:text-xl">₹</span>
               </div>
               <Sparkles className="absolute -top-1 -right-1 w-4 h-4 text-[#ff9500]" />
             </div>
-            <div className="hidden sm:block">
+            <div className="">
               <span className="font-bold text-xl md:text-2xl dark:text-black text-gray-900">Bundles</span>
               <span className="font-bold text-xl md:text-2xl dark:text-black text-[#7B2CBF]">@100</span>
             </div>
           </Link>
 
           {/* Desktop Nav */}
-          <div className="hidden md:flex items-center gap-8">
+          <div className="hidden md:flex items-center gap-8 dark:text-black">
             {navLinks.map((link) => (
               <Link
                 key={link.href}
@@ -63,7 +64,7 @@ export default function Navbar() {
             <Sheet open={isOpen} onOpenChange={setIsOpen}>
               <SheetTrigger asChild className="md:hidden">
                 <Button variant="ghost" size="icon">
-                  <Menu className="h-6 w-6" />
+                  <Menu className="h-6 w-6 dark:text-black" />
                 </Button>
               </SheetTrigger>
               <SheetContent side="right" className="pl-10 w-80">
@@ -73,12 +74,12 @@ export default function Navbar() {
                       key={link.href}
                       href={link.href}
                       onClick={() => setIsOpen(false)}
-                      className="text-lg font-medium text-gray-700 hover:text-[#7B2CBF] transition-colors"
+                      className="text-lg dark:text-white font-medium text-gray-700 hover:text-[#7B2CBF] transition-colors"
                     >
                       {link.name}
                     </Link>
                   ))}
-                  <Link href="/shop" onClick={() => setIsOpen(false)}>
+                  <Link href="/" onClick={() => setIsOpen(false)}>
                     <Button className="w-full bg-gradient-to-r from-[#9D4EDD] to-[#C77DFF] text-white font-semibold mt-4">
                       Shop All Bundles
                     </Button>

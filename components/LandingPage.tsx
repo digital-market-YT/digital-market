@@ -28,6 +28,8 @@ export default function HeroSection() {
   "https://res.cloudinary.com/dkwabt89v/image/upload/v1770126050/1769912985519_jjloit.png",
   "https://res.cloudinary.com/dkwabt89v/image/upload/v1770125947/IMG_20260201_082650_vfkfvp.png",
   "https://res.cloudinary.com/dkwabt89v/image/upload/v1770125927/IMG_20260201_082612_mjqo5w.png"
+
+
 ];
 
   return (
@@ -111,7 +113,7 @@ export default function HeroSection() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
-            className="inline-flex items-center gap-2 bg-gradient-to-r from-[#7B2CBF]/10 to-[#9D4EDD]/10 border border-[#7B2CBF]/20 rounded-full px-4 py-2 mb-6"
+            className="inline-flex items-center gap-2 rounded-full px-4 py-2 mb-6"
           >
             <Sparkles className="w-4 h-4 text-[#C77DFF]" />
             <span className="text-sm font-medium text-gray-700">India&apos;s #1 Budget Digital Store</span>
