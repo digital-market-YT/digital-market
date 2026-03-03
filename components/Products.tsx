@@ -3,7 +3,7 @@
 
 
 import Link from 'next/link';
-import React from 'react';
+
 
 interface Product {
   id: number;
@@ -19,16 +19,15 @@ const products: Product[] = [
   { id: 1,
     name: "Ai Baby Fruit Eating reels Bundle (No copyright issues | Instant Download)",
     slug: "ai-baby-fruit-eating-reels-bundle",
-    image: "https://res.cloudinary.com/dkwabt89v/image/upload/v1770126042/IMG_20260201_081511_wziqfe.png",
-  
+    image: "https://pbs.twimg.com/media/HCUBlGIagAAtO_6.jpg",
     price: 99,
     
   },
   {  id:2,
     name: "3d Knowledge Fact Reels Bundle (No copyright issues | Instant Download)",
     slug: "3d-knowledge-fact-reels-bundle",
-    image: "https://res.cloudinary.com/dkwabt89v/image/upload/v1770126013/IMG_20260201_081118_hkniu0.jpg",
-   
+    image: "https://pbs.twimg.com/media/HCUBlF0bEAQC-fW.jpg",
+    
     price: 199
   
   },
@@ -36,8 +35,7 @@ const products: Product[] = [
     name: "Ai Baby Podcast Reels Bundle (No copyright issues | Instant Download)",
     
     slug: "ai-baby-podcast-reels-bundle",
-    image: "https://res.cloudinary.com/dkwabt89v/image/upload/v1770125999/IMG_20260201_081153_xllbzo.jpg",
-
+    image: "https://pbs.twimg.com/media/HCUBlF3bsAAhO8f.jpg",
     price: 99,
    
   },
@@ -45,32 +43,28 @@ const products: Product[] = [
     id: 4,
     name: "Ai Story Reels Bundle (No copyright issues | Instant Download)",
     slug: "ai-story-reels-bundle",
-    image:"https://res.cloudinary.com/dkwabt89v/image/upload/v1770125994/IMG_20260201_081451_kdz9zf.jpg",
-    
+    image:"https://pbs.twimg.com/media/HCUBlGHaEAAyYOn.jpg",
     price: 99,
   
   },
   { id: 5,
     name: "Ai Talking Objects Reels Bundle (No copyright issues | Instant Download)",
     slug: "ai-talking-objects-reels-bundle",
-    image: "https://res.cloudinary.com/dkwabt89v/image/upload/v1770125972/IMG_20260201_081543_ijdvju.jpg",
-   
+    image: "https://pbs.twimg.com/media/HCUBbovbEAEEKIj.jpg",
     price: 99,
   
   },
   { id: 6,
     name: "Anime Reels Edit Bundle (No copyright issues | Instant Download)",
     slug: "anime-reels-edit-bundle",
-    image: "https://res.cloudinary.com/dkwabt89v/image/upload/v1770125958/IMG_20260201_081709_dc1cr5.jpg",
-   
+    image: "https://pbs.twimg.com/media/HCUBbotbEAQQelB.jpg",
     price: 99,
    
   },
   { id: 7,
     name: "3D-Animated Gym Reels Bundle (No copyright issues | Instant Download)",
     slug: "3d-animated-gym-reels-bundle",
-    image: "https://res.cloudinary.com/dkwabt89v/image/upload/v1770126028/IMG_20260201_081732_kxw3hz.png",
-   
+     image: "https://pbs.twimg.com/media/HCUBvnLbAAAdrp0.jpg",
     price: 99,
    
   },
@@ -78,37 +72,129 @@ const products: Product[] = [
   { id: 8,
     name: "Resin Flooring Timelapse Reels Bundle (No copyright issues | Instant Download)",
     slug: "resin-flooring-timelapse-reels-bundle",
-    image: "https://res.cloudinary.com/dkwabt89v/image/upload/v1770125943/IMG_20260201_082008_gwbpyx.png",
-   
+    image: "https://pbs.twimg.com/media/HCUBbq7bEAAp-JX.jpg",
     price: 99,
   
   },
   { id: 9,
     name: "Viral Ai Dancing Reels Bundle (No copyright issues | Instant Download)",
     slug: "viral-ai-dancing-reels-bundle",
-    image: "https://res.cloudinary.com/dkwabt89v/image/upload/v1770125931/IMG_20260201_082043_dbxu5y.png",
-   
+    image: "https://pbs.twimg.com/media/HCUBbo1aIAA5j7z.jpg",
     price: 99,
    
   },
   { id: 10,
     name: "4K Car Crash Reels Bundle (No copyright issues | Instant Download)",
     slug: "4k-car-crash-reels-bundle",
-    image: "https://res.cloudinary.com/dkwabt89v/image/upload/v1770126049/1769913020272_uyowt9.png",
-   
+    image: "https://pbs.twimg.com/media/HCUBRrzb0AARZlb.jpg",
     price: 99,
    
   },
-  
-  { id: 11,
-    name: "Mega All In One Reels Bundle Pack (No copyright issues | Instant Download)",
-    slug: "mega-all-in-one-reels-bundle-pack",
-    image: "https://res.cloudinary.com/dkwabt89v/image/upload/v1770125927/IMG_20260201_082612_mjqo5w.png",
+  {
+    id: 11,
+    name: "Canva Editing Pack (No copyright issues | Instant Download)",
+    slug: "canva-editing-pack",
+    image:"https://pbs.twimg.com/media/HCUBKxAakAAt5yB.jpg",
+    price: 99,
+   
+   
+
+  },
+  {
+    id: 12,
+    name: "Hindu God Reels Bundle Pack (No copyright issues | Instant Download)",
+    slug: "hindu-god-reels-bundle-pack",
+    image:"https://pbs.twimg.com/media/HCUBKxUbEAAvIxt.jpg",
+    price: 99,
+   
+  },
+   {
+    id: 13,
+    name: "Ai Tech Videos Reels Bundle Pack (No copyright issues | Instant Download)",
+    image:"https://pbs.twimg.com/media/HCUBFRSa4AAbj55.jpg",
+    price: 99,
+   
+    slug: "ai-tech-videos-reels-bundle-pack"
+    
+  },
+
+  {
+    id: 14,
+    name: "2d Animation Reels Bundle Pack (No copyright issues | Instant Download)",
+    slug: "2d-animation-reels-bundle-pack",
+    image:"https://pbs.twimg.com/media/HCUBFTIbEAMUPxQ.jpg",
+    price: 99,
+   
+  },
+  {
+    id: 15,
+    
+    name: "Shark Tank Bundle Reels Pack (No copyright issues | Instant Download)",
+    image:"https://pbs.twimg.com/media/HCUBFRMbEAYtZkR.jpg",
+    price: 99,
+   
+    slug: "shark-tank-bundle-reels-pack",
+   
+  },
+  {
+    id: 16,
+    name: "1000+ Nature HD reels Bundle Pack (No copyright issues | Instant Download)",
+    slug: "nature-hd-reels-bundle-pack",
+    image:"https://pbs.twimg.com/media/HCUBFS2bUAAb26_.jpg",
+    price: 99,
+   
+  },
+  {
+    id: 17,
+    name: "Ai health Reels Bundle Pack (No copyright issues | Instant Download)",
+    slug: "ai-health-reels-bundle-pack",
+    image:"https://pbs.twimg.com/media/HCUA-rcbcAAu8R3.jpg",
+    price: 99,
+   
+  },
+
+
+    {
+      id:18,
+    name: "Universe Space Content Reels (No copyright issues | Instant Download)",
+    image:"https://pbs.twimg.com/media/HCUA-oZbEAIOoz1.jpg",
    
     price: 99,
    
-  }
-];
+    slug: "universe-space-content-reels",
+
+  
+  
+  },
+ 
+
+
+
+  {
+    id: 19,
+    name: "Cricket Reels Bundle pack (No copyright issues | Instant Download)",
+    slug: "cricket-reels-bundle-pack",
+    image:"https://pbs.twimg.com/media/HCUA-oYbEAAo7jl.jpg",
+    price: 99,
+   
+  },
+  {
+    id: 20,
+    name: "Ai Tools craft reels (No copyright issues | Instant Download)",
+    slug: "ai-tools-craft-reels",
+    image: "https://pbs.twimg.com/media/HCUA-oZbQAA3owB.jpg",
+    price: 99,
+   
+  },
+ 
+   { id: 21,
+    name: "Mega All In One Reels Bundle Pack (No copyright issues | Instant Download)",
+    slug: "mega-all-in-one-reels-bundle-pack",
+    image: "https://pbs.twimg.com/media/HCUBRrhbEAIxjKS.jpg",
+    price: 99,
+   
+  },
+]
 
 
 export default function ProductsPage() {

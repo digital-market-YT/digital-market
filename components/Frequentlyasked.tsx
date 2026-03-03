@@ -95,14 +95,14 @@ export default function FAQPage() {
                         <Mail className="w-4 h-4 text-blue-600" />
                         <span className="font-medium">Email:</span>
                         <a href="mailto:nextzshop.online@gmail.com" className="text-blue-600 hover:underline">
-                          nextzshop.online@gmail.com
+                          nextzshop2.online@gmail.com
                         </a>
                       </div>
                       <div className="flex items-center gap-2 text-sm">
                         <MessageCircle className="w-4 h-4 text-green-600" />
                         <span className="font-medium">WhatsApp:</span>
-                        <a href="https://wa.me/917793930405" className="text-green-600 hover:underline">
-                          +91 7793930405
+                        <a href="https://wa.me/91987654321" className="text-green-600 hover:underline">
+                          +91 987654321
                         </a>
                       </div>
                     </div>

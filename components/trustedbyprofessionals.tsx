@@ -122,7 +122,7 @@ export const testimonials: FakeComment[] = [
 export default function TestimonialsPage() {
 
   return (
-    <div className="min-h-screen font-sans transition-colors bg-white">
+    <div className="min-h-screen font-sans transition-colors text-black  dark:bg-black bg-white dark:text-white">
      
 
       {/* Hero Section */}

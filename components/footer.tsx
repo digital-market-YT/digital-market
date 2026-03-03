@@ -188,7 +188,7 @@ export default function DigitalProductsFooter() {
         <div className="max-w-7xl mx-auto px-4">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <p className="text-sm text-[--muted-foreground]">
-              © 2026 NextZShop. All rights reserved. Powered by Shopify
+              © 2026 NextZShop. All rights reserved. Powered by NextJs
             </p>
             
             <div className="flex items-center gap-3">
