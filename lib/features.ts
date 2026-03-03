@@ -192,7 +192,7 @@ export const products: Product[] = [
     slug: "cricket-reels-bundle-pack",
     image:"https://pbs.twimg.com/media/HCUA-oYbEAAo7jl.jpg",
     price: 99,
-    superProfileUrl: "enter super profile url",
+    superProfileUrl: "https://superprofile.bio/vp/cricket-reels-bundle-pack",
 
    
   },
